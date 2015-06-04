@@ -1,0 +1,140 @@
+/**
+ * Codepen
+ */
+.syntaxhighlighter {
+	background-color: #222 !important;
+}
+.syntaxhighlighter td {
+	padding: 0;
+}
+.syntaxhighlighter .line.alt1 {
+	background-color: #1d1f21 !important;
+}
+.syntaxhighlighter .line.alt2 {
+	background-color: #1d1f21 !important;
+}
+.syntaxhighlighter .line.highlighted.alt1, .syntaxhighlighter .line.highlighted.alt2 {
+	background-color: #444 !important;
+}
+.syntaxhighlighter .line.highlighted.number {
+	color: #dfc48c !important;
+}
+.syntaxhighlighter table caption {
+	color: #dfc48c !important;
+	background-color: #3d3d3e !important;
+	border-bottom: none !important;
+}
+.syntaxhighlighter table td.gutter .line,
+.syntaxhighlighter table td.code .line {
+	padding-top: 2px !important;
+	padding-bottom: 2px !important;
+}
+.syntaxhighlighter .gutter {
+	text-align: right;
+	color: #767676 !important;
+}
+body .syntaxhighlighter table td.gutter .line:first-child,
+body .syntaxhighlighter table td.code .line:first-child {
+	padding-top: 10px !important;
+}
+body .syntaxhighlighter table td.gutter .line:last-child,
+body .syntaxhighlighter table td.code .line:last-child {
+	padding-bottom: 10px !important;
+}
+.syntaxhighlighter .gutter .line {
+	padding-right: 10px;
+	background: #4B4C4F !important;
+	border-right: 1px solid #666767 !important;
+}
+body .syntaxhighlighter table td.gutter .line {
+	padding: .085em 0.5em 0 1em !important;
+}
+/* For only Chrome */
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    body .syntaxhighlighter table td.gutter .line {
+		padding: .135em 0.5em 0 1em !important;
+	}
+}
+/*.syntaxhighlighter table td.gutter .line {
+	font-size: .8rem !important;
+	padding-top: .15rem !important;
+	padding-bottom: .1rem !important;
+}*/
+.syntaxhighlighter .gutter .line.highlighted {
+	background-color: #1d1f21 !important;
+/*	color: #ddca7e !important;*/
+}
+.syntaxhighlighter.printing .line .content {
+	border: none !important;
+}
+.syntaxhighlighter.collapsed {
+	overflow: visible !important;
+}
+.syntaxhighlighter.collapsed .toolbar {
+	color: #1d1f21 !important;
+	background: #cd6a51 !important;
+}
+.syntaxhighlighter.collapsed .toolbar a {
+	color: #1d1f21 !important;
+}
+.syntaxhighlighter.collapsed .toolbar a:hover {
+	color: #cc6666 !important;
+}
+.syntaxhighlighter .toolbar {
+	color: #1d1f21 !important;
+	background: #cd6a51 !important;
+	border: none !important;
+}
+.syntaxhighlighter .toolbar a {
+	color: #1d1f21 !important;
+}
+.syntaxhighlighter .toolbar a:hover {
+	color: #dfc48c !important;
+}
+.syntaxhighlighter .plain, .syntaxhighlighter .plain a {
+	color: #fff !important;
+}
+.syntaxhighlighter .comments, .syntaxhighlighter .comments a {
+	color: #666 !important;
+}
+.syntaxhighlighter .string, .syntaxhighlighter .string a {
+	color: #96b38a !important;
+}
+.syntaxhighlighter .keyword {
+	color: #9b869c !important;
+}
+.syntaxhighlighter .preprocessor {
+	color: #ddca7e !important;
+}
+.syntaxhighlighter .variable {
+	color: #809bbd !important;
+}
+.syntaxhighlighter .value {
+	color: #cd6a51 !important;
+}
+.syntaxhighlighter .functions {
+	color: #cc6666 !important;
+}
+.syntaxhighlighter .constants {
+	color: #B294BB !important;
+}
+.syntaxhighlighter .script {
+	font-weight: bold !important;
+	color: #9b869c !important;
+	background-color: none !important;
+}
+.syntaxhighlighter .color1, .syntaxhighlighter .color1 a {
+	color: #ddca7e !important;
+}
+.syntaxhighlighter .color2, .syntaxhighlighter .color2 a {
+	color: #F0C674 !important;
+}
+.syntaxhighlighter .color3, .syntaxhighlighter .color3 a {
+	color: #cc6666 !important;
+}
+
+@media all and (max-width: 900px) {
+	.syntaxhighlighter {
+		-webkit-text-size-adjust: 100%;
+	}
+}

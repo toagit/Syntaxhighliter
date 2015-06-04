@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Hello SyntaxHighlighter</title>
+	<style type="text/css" id="syntaxhighlighteranchor"></style>
+
+	<script type="text/javascript" src="scripts/shCore.js"></script>
+	<script type="text/javascript" src="scripts/shBrushJava.js"></script>
+	<script type="text/javascript" src="scripts/shBrushJScript.js"></script>
+	<script type='text/javascript' src='scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='scripts/shBrushCss.js'></script>
+	<script type="text/javascript" src="scripts/shBrushSql.js"></script>
+	<script type="text/javascript" src="scripts/shBrushVb.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+	<link type="text/css" rel="stylesheet" href="styles/syntaxhighlighter-theme-codepen.css" id="css-ch">
+	<script type='text/javascript'>
+		(function(){
+			var corecss = document.createElement('link');
+			var themecss = document.createElement('link');
+			var corecssurl = "styles/shCore.css";
+			if ( corecss.setAttribute ) {
+					corecss.setAttribute( "rel", "stylesheet" );
+					corecss.setAttribute( "type", "text/css" );
+					corecss.setAttribute( "href", corecssurl );
+			} else {
+					corecss.rel = "stylesheet";
+					corecss.href = corecssurl;
+			}
+			document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		})();
+		SyntaxHighlighter.config.strings.expandSource = 'ソースを表示';
+		SyntaxHighlighter.config.strings.help = 'SyntaxHighlighterについて';
+		SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+		SyntaxHighlighter.config.strings.noBrush = '指定のブラシが見つかりませんでした: ';
+		SyntaxHighlighter.config.strings.brushNotHtmlScript = 'HTMLスクリプトのオプションのためにブラシが構成されませんでした: ';
+		SyntaxHighlighter.defaults['auto-links'] = false;
+		SyntaxHighlighter.defaults['class-name'] = 'code';
+		SyntaxHighlighter.defaults['pad-line-numbers'] = true;
+		SyntaxHighlighter.defaults['toolbar'] = false;
+		SyntaxHighlighter.all();
+		</script>
+		<script type="text/javascript">
+		function changesytle(cssfile) {
+		document.getElementById('css-ch').href = cssfile;
+		}
+	</script>
+	<script type='text/javascript'>
+		function textcopy(){
+			var textarea = document.getElementById("textarea").value;
+		//	document.getElementById("textarea").value = "";
+		// "insert"のidが指定されたの要素の中に挿入
+		//alert(document.getElementById("insert").innerHTML);
+		document.getElementById("insert").innerHTML = "<pre class='brush: js; title: ; notranslate' title=''>" + textarea + "</pre>";
+		document.getElementById("ins").innerText = textarea;
+	}
+	</script>
+</head>
+
+<!--
+
+-->
+
+<body style="background: white; font-family: Helvetica">
+
+CSS表示切替
+
+<select onchange="changesytle(value);">
+<option value="styles/syntaxhighlighter-theme-codepen.css">CodePen</option>
+<option value="styles/shThemeDefault.css" selected>標準スタイル</option>
+<option value="styles/shThemeDjango.css">Django</option>
+<option value="styles/shThemeEclipse.css">Eclipse</option>
+<option value="styles/shThemeEmacs.css">Emacs</option>
+<option value="styles/shThemeFadeToGrey.css">FadeToGrey</option>
+<option value="styles/shThemeMidnight.css">Midnight</option>
+<option value="styles/shThemeRDark.css">RDark</option>
+<option value="styles/secret.css">スタイルなし</option>
+</select>
+<br>
+<form>
+<textarea id="textarea" cols="100" rows="5">
+</textarea>
+<p><button type="button" onclick="textcopy()">↓追加</button></p>
+</form>
+------------------------<br>
+<br>
+<div id="insert">
+</div>
+	<pre class="brush: js; title: ; notranslate" title="" id="ins">
+	ArrayList list = new ArrayList(Arrays.asList(new String[][]{{"A1","A2"},{"B1","B2"}};
+	</pre>
+<br>
+------------------------<br>
+
+</body>
+</html>
